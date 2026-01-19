@@ -6,19 +6,168 @@
 html{
   width: 100%;
   font-size: 62.5%;
-  display: flex;
-  flex-direction: column;
 }
 body{
   width: 100%;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  font-family: sans-serif;
 }
 .main-container{
   width: 100%;
-  flex: 1;
 }
-h1{
+/* HEADER SECTION */
+.header-section{
+  background-color: #3e096e;
+  width: 100%;
+  min-height: 7.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.nav-bar{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.icon h1{
+  font-size: 3rem;
+  line-height: 1.5;
+  letter-spacing: -2px;
+}
+.icon h1 .white-text{
+  color: white;
+}
+.icon h1 .gradient-text{
+  background: linear-gradient(90deg,#da3d1e, #ad1459);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links ul{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  color: white;
+}
+
+.nav-btn button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: linear-gradient(135deg,#790355,#2d0357);
+  line-height: 1.5;
+  letter-spacing: -1px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  gap: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  box-shadow:  0 0 5px rgba(0,0,0,0.5);
+}
+.nav-btn button a{
+  text-decoration: none;
+  color: white;
+}
+.hamburger-icon{
+  display: none;
+}
+/* HERO SECTION */
+.hero-section{
+  width: 100%;
+  min-height: calc(100vh - 7.5rem);
+  background-image: url('../assets/hero-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 10rem;
+}
+.hero-image{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.hero-image figure{
+  position: relative;
+}
+figure .microphone-image-bg{
+  width: 30rem;
+}
+figure .microphone-image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.hero-text-content{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
   text-align: center;
 }
+.hero-text-content h1{
+  font-size: 5rem;
+  letter-spacing: -2px;
+  line-height: 1.5;
+  color: white;
+  margin-top: 8rem;
+}
+.hero-text-content p{
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  color: white;
+}
+.hero-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.hero-btn .spotify-btn{
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg,#790355,#2d0357);
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.hero-btn .spotify-btn a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  font-weight: 600;
+  color: white;
+}
+.hero-btn .message-btn{
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.hero-btn .message-btn a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  font-weight: 600;
+  color: green;
+}
+
