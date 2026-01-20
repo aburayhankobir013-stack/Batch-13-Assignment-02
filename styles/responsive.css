@@ -19,4 +19,100 @@
   .hamburger-icon {
     display: block;
   }
+  .hero-text-content {
+    width: 100%;
+  }
+  .hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .hero-btn .spotify-btn {
+    width: fit-content;
+  }
+  .hero-btn .message-btn {
+    width: fit-content;
+  }
+}
+/* INFORMATIN SECTION */
+@media screen and (max-width: 576px) {
+  .text-information .normal-paragraph {
+    padding-inline: 0rem;
+  }
+  .text-information {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+  .card-information {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-information .card h1 {
+    font-size: 2.5rem;
+  }
+}
+/* GRID SECTION */
+@media screen and (max-width: 576px) {
+  .grid-section .grid-container {
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "m"
+      "g"
+      "i"
+      "r";
+  }
+  .audio,
+  .mobile,
+  .global,
+  .interviews,
+  .resource {
+    align-items: center;
+    text-align: center;
+    padding-inline: 3rem;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* FEATURE SECTION */
+@media screen and (max-width: 576px) {
+  .features-card-container {
+    flex-direction: column;
+  }
+}
+
+/* HOST SECTION */
+@media screen and (max-width: 576px) {
+  .host-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  footer ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* FOOTER SECTION */
+@media screen and (max-width: 576px) {
+  .footer-title h1 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    letter-spacing: -2px;
+  }
+  .host-container .host-text-content {
+    text-align: center;
+    align-items: center;
+  }
+  .host-container {
+    margin-top: 2rem;
+  }
 }
